@@ -1,0 +1,26 @@
+SENDING:M501
+echo:V38 stored settings retrieved (453 bytes; crc -2098)
+echo:  G21    ; Units in mm
+echo:  M149 C ; Units in Celsius
+echo:Filament settings: Disabled
+echo:  M200 D3.00
+echo:  M200 D0
+echo:Steps per unit:
+echo:  M92 X80.00 Y80.00 Z4000.00 E178.24
+echo:Maximum feedrates (units/s):
+echo:  M203 X500.00 Y500.00 Z2.00 E25.00
+echo:Maximum Acceleration (units/s2):
+echo:  M201 X2000 Y2000 Z20 E1000
+echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+echo:  M204 P3000.00 R3000.00 T3000.00
+echo:Advanced: S<min_feedrate> T<min_travel_feedrate> B<min_segment_time_ms> X<max_xy_jerk> Z<max_z_jerk> E<max_e_jerk>
+echo:  M205 S0.00 T0.00 B20000 X20.00 Y20.00 Z0.40 E5.00
+echo:Home offset:
+echo:  M206 X-10.00 Y-10.00 Z-0.20
+echo:Material heatup parameters:
+echo:  M145 S0 H200 B60 F0
+  M145 S1 H255 B90 F0
+echo:PID settings:
+echo:  M301 P22.20 I1.08 D114.00
+
+
