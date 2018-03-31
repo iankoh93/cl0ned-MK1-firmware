@@ -1,26 +1,38 @@
 SENDING:M501
-echo:V38 stored settings retrieved (453 bytes; crc -2098)
+echo:V38 stored settings retrieved (453 bytes; crc 28168)
 echo:  G21    ; Units in mm
 echo:  M149 C ; Units in Celsius
 echo:Filament settings: Disabled
 echo:  M200 D3.00
 echo:  M200 D0
 echo:Steps per unit:
-echo:  M92 X80.00 Y80.00 Z4000.00 E178.24
+echo:  M92 X80.00 Y80.00 Z1600.00 E175.61
 echo:Maximum feedrates (units/s):
-echo:  M203 X500.00 Y500.00 Z2.00 E25.00
+echo:  M203 X500.00 Y500.00 Z5.00 E40.00
 echo:Maximum Acceleration (units/s2):
-echo:  M201 X2000 Y2000 Z20 E1000
+echo:  M201 X9000 Y9000 Z100 E10000
 echo:Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
 echo:  M204 P3000.00 R3000.00 T3000.00
 echo:Advanced: S<min_feedrate> T<min_travel_feedrate> B<min_segment_time_ms> X<max_xy_jerk> Z<max_z_jerk> E<max_e_jerk>
 echo:  M205 S0.00 T0.00 B20000 X20.00 Y20.00 Z0.40 E5.00
 echo:Home offset:
-echo:  M206 X0.00 Y0.00 Z0.3
+echo:  M206 X0.00 Y0.00 Z-0.40
+echo:Mesh Bed Leveling:
+echo:  M420 S1 Z0.00
+echo:  G29 S3 X1 Y1 Z-0.22500
+echo:  G29 S3 X2 Y1 Z0.25000
+echo:  G29 S3 X3 Y1 Z0.20000
+echo:  G29 S3 X1 Y2 Z0.02500
+echo:  G29 S3 X2 Y2 Z0.40000
+echo:  G29 S3 X3 Y2 Z0.50000
+echo:  G29 S3 X1 Y3 Z0.02500
+echo:  G29 S3 X2 Y3 Z0.37500
+echo:  G29 S3 X3 Y3 Z0.47500
 echo:Material heatup parameters:
-echo:  M145 S0 H200 B60 F0
+echo:  M145 S0 H200 B65 F0
   M145 S1 H255 B90 F0
 echo:PID settings:
-echo:  M301 P22.20 I1.08 D114.00
+echo:  M301 P37.69 I5.54 D64.07
+
 
 
