@@ -295,6 +295,10 @@
 //============================= PID Settings ================================
 //===========================================================================
 // PID Tuning Guide here: http://reprap.org/wiki/PID_Tuning
+//PID Autotune finished! Put the last Kp, Ki and Kd constants from below into Configuration.h
+//#define  DEFAULT_Kp 33.63
+//#define  DEFAULT_Ki 2.83
+//#define  DEFAULT_Kd 99.88
 
 // Comment the following line to disable PID and enable bang-bang.
 #define PIDTEMP
@@ -313,10 +317,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+  // 3Deep settings
+  #define  DEFAULT_Kp 33.63
+  #define  DEFAULT_Ki 2.83
+  #define  DEFAULT_Kd 99.88
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
